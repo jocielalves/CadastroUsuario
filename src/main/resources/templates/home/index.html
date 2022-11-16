@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"  defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <header >
+        <navbar>
+            <div> <a href="#home"> <img src="./imgs/logo.png" alt="" id="logo"></a> </div>
+            <ul class="menu">
+                <li> <a href="#home"> Home </a></li>
+                <li> <a href="#produtos"> Produtos </a></li>
+                <li> <a href="/usuarios"> Usuarios </a></li>
+                <li> <a href="#fale-conosco"> Fale Conosco </a></li>
+            </ul>
+        </navbar>
+        <a class="material-symbols-outlined" id="logout" href="/login"> logout </a>
+        
+    </header>
+
+    <section id="home">
+        <div class="bem-vindo">
+            <h1 > Seja Bem Vindo </h1>
+         </div>
+        <div class="busca">
+                    <input type="text" name="caixa-busca" id="caixa-busca"><button id="btn-buscar" >Buscar</button>
+        </div>        
+    </section>
+        
+    <div id="produtos">
+        <h1>Produtos</h1>
+    
+    <section class="grid-principal">
+    
+        <article>
+            <img src="./imgs/notebook.jpg" alt="Notebook Samsung" width="500px">
+            <p>Notebook Samsung</p>
+        </article>
+        <article>
+            <img src="./imgs/tablet.jpg" alt="Tablet Samsung" width="500px">
+            <p>Tablet Samsung</p>
+        </article>
+        <article>
+            <img src="./imgs/smartphone.png" alt="Smartphone" width="500px">
+            <p>Smartphone Samsung</p>
+        </article>
+        <article>
+            <img src="./imgs/macbook.jpg" alt="Macbook" width="500px">
+            <p>Macbook</p>
+        </article>
+        <article>
+            <img src="./imgs/iphone.png" alt="Iphone" width="500px">
+            <p>Iphone</p>
+        </article>
+        <article class="anuncio-monitor">
+            <img src="./imgs/monitor.jpg" alt="Monitor Curvo" width="500px">
+            <p>Monitor Curvo</p>
+        </article>
+        <article>
+            <img src="./imgs/gabinete.png" alt="Gabinete gamer" width="500px">
+            <p>Gabinete Gamer</p>
+        </article>
+        <article>
+            <img src="./imgs/teclado.jpg" alt="Teclado Mecanico" width="500px">
+            <p>Teclado Mecânico</p>
+        </article>
+        <article>
+            <img src="./imgs/headset.jpg" alt="Headset JBL" width="500px">
+            <p>Headset JBL</p>
+        </article>
+        <article>
+            <img src="./imgs/mouse.jpg" alt="Mouse Vertical" width="500px">
+            <p>Mouse Vertical</p>
+        </article>
+    </section>
+</div>
+
+
+    <div class="formulario" id="fale-conosco">
+
+        <form action="" class="fale-conosco">
+                <h1 id="titulo">Fale Conosco</h1>
+    
+            <div class="campo">
+                <label> <strong>Nome</strong>  </label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="contato"><strong>Contato</strong></label>
+                    <select name="contato" id="contato">
+                        <option disabled selected value="">Selecione</option>
+                        <option value="telefone" >Telefone</option>
+                        <option value="celular">Celular</option>
+                        <option value="whatsapp">Whatsapp</option>
+                    </select>
+                    <input type="text" name="numero" id="numero" required>
+            </div>
+            
+            <div class="campo">
+                <br>
+                <label for="recado"><strong>Deixe seu recado:</strong></label>
+                <textarea name="recado" id="recado" rows="8"></textarea>
+            </div>
+    
+            <div class="btn"> 
+                <button class="botao"  type="button" onclick="salvarRecado()"> Enviar Recado </button>
+            </div>
+    
+            
+        </form>
+
+    </div>
+        <footer>
+            <p> Desenvolvido por Jociel Alves</p>
+            <p> Todos os direitos reservados  &copy; 2022</p>
+            
+        </footer>
+
+
+        
+</body>
+</html>
